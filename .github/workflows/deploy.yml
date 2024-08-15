@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install NPM dependencies
+      - name: Install NPM dependencies
       run: npm install
 
       - name: Checkout repo
