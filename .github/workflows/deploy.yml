@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Install NPM dependencies
         run: npm install
+        working-directory: ./my-weather-app
 
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -25,6 +26,7 @@ jobs:
 
       - name: Build project
         run: npm run build
+        working-directory: ./my-weather-app
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
